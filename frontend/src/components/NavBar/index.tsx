@@ -5,18 +5,18 @@ import './styles.css'
 function NavBar() {
   return (
     <header>
-      <nav className="container">
-            <div className="dsmovie-nav-content">
-              <h1>DsMovie</h1>
-              <a href="github.com/KaueSabinoSRV17">
-                  <div className="dsmovie-nav-contact">
+    <nav className="container">
+        <div className="dsmovie-nav-content">
+            <h1>DSMovie</h1>
+            <a href="https://github.com/KaueSabinoSRV17" target="_blank" rel="noreferrer">
+                <div className="dsmovie-contact-container">
                     <GitHubIcon />
                     <p className="dsmovie-contact-link">/KaueSabinoSRV17</p>
-                  </div>
-              </a>
-            </div>
-      </nav>
-    </header>
+                </div>
+            </a>
+        </div>
+    </nav>
+</header>
   );
 }
 
