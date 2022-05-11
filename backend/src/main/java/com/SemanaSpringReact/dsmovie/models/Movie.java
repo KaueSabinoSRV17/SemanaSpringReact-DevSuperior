@@ -12,7 +12,7 @@ public class Movie {
 	
 	@Id
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
-	private Integer id;
+	private Long id;
 	private String title;
 	private Double score;
 	private Integer count;
@@ -22,7 +22,7 @@ public class Movie {
 		
 	}
 
-	public Movie(Integer id, String title, Double score, Integer count, String image) {
+	public Movie(Long id, String title, Double score, Integer count, String image) {
 		this.id = id;
 		this.title = title;
 		this.score = score;
@@ -30,11 +30,11 @@ public class Movie {
 		this.image = image;
 	}
 
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

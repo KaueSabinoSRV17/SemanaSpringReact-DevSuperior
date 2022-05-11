@@ -26,4 +26,13 @@ public class MovieService {
 		
 	}
 
+	@Transactional (readOnly = true)
+	public MovieDTO findById(Long id) {
+		
+		Movie result = mr.findById(id).get();
+		MovieDTO dto = new MovieDTO(result);
+		return dto;		
+		
+	}
+
 }

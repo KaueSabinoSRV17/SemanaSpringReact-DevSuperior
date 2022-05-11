@@ -4,7 +4,7 @@ import com.SemanaSpringReact.dsmovie.models.Movie;
 
 public class MovieDTO {
 	
-	private Integer id;
+	private Long id;
 	private String title;
 	private Double score;
 	private Integer count;
@@ -14,7 +14,7 @@ public class MovieDTO {
 		
 	}
 
-	public MovieDTO(Integer id, String title, Double score, Integer count, String image) {
+	public MovieDTO(Long id, String title, Double score, Integer count, String image) {
 		this.id = id;
 		this.title = title;
 		this.score = score;
@@ -30,11 +30,11 @@ public class MovieDTO {
 		this.image = movie.getImage();
 	}
 
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
